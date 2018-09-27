@@ -1,0 +1,22 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "简单的express demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renruijun/express.git"
+  },
+  "author": "xiaobei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renruijun/express/issues"
+  },
+  "homepage": "https://github.com/renruijun/express#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
