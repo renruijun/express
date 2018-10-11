@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "紧致而今准",
+      "password": "password1",
+      "profession": "teacher",
+      "id": 1
+    },
+    {
+      "name": "阿斯顿环",
+      "password": "password2",
+      "profession": "librarian",
+      "id": 2
+    },
+    {
+      "name": "比那刑警",
+      "password": "password3",
+      "profession": "clerk",
+      "id": 3
+    }
+  ]
+}

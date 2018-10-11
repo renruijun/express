@@ -4,7 +4,11 @@
   "description": "简单的express demo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app":"node app.js",
+    "route":"node src/route/route.js",
+    "get":"node src/get/get.js",
+    "process":"node src/process/process.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,9 @@
   },
   "homepage": "https://github.com/renruijun/express#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "cookie-parse": "^0.4.0",
+    "express": "^4.16.3",
+    "multer": "^1.4.0"
   }
 }

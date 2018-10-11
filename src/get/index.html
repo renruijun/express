@@ -1,0 +1,33 @@
+<html>
+<title>express demo</title>
+
+<body>
+    <form action="http://localhost:8092/getForm" method="GET">
+        姓名: <input type="text" name="name"><br>
+        年龄: <input type="text" name="age">
+        <input type="submit" value="提交">
+    </form>
+    
+    <button type="button" onclick="loadText()">获取用户list</button>
+    <div id="myDiv"></div>
+</body>
+<script>
+    function loadText() {
+        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP")
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                let data = JSON.parse(JSON.parse(xhr.responseText).data)
+                let content = ""
+                data.users.forEach((i) => {
+                    content = content + "<li>用户名：" + i.name + "</li>"
+                })
+                console.log("用户列表：", data)
+                document.getElementById("myDiv").innerHTML = "<ol>" + content + "</ol>"
+            }
+        }
+        xhr.open("GET", "http://localhost:8092/getUserList", true);
+        xhr.send();
+    }
+</script>
+
+</html>
