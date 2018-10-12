@@ -11,4 +11,4 @@ let printMoudleInfo = (filename, dirname) => {
   console.info("======================================================");
 };
 
-module.exports = printMoudleInfo;
+module.exports = { printMoudleInfo };

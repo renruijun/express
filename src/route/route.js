@@ -1,8 +1,8 @@
 let express = require("express");
 let app = express();
 
-let printMoudleInfo = require("../utils/moduleInfo");
-printMoudleInfo(__filename, __dirname);
+let moudleInfo = require("../utils/moduleInfo");
+moudleInfo.printMoudleInfo(__filename, __dirname);
 
 // 处理静态文件
 app.use(express.static("public"));

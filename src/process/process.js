@@ -1,5 +1,5 @@
-let printMoudleInfo = require("../utils/moduleInfo");
-printMoudleInfo(__filename, __dirname);
+let moudleInfo = require("../utils/moduleInfo");
+moudleInfo.printMoudleInfo(__filename, __dirname);
 
 console.log("argv:", process.argv);
 
